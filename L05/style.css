@@ -1,0 +1,48 @@
+.box {
+  display: flex;
+  margin: 2px;
+}
+
+.box1 { background-color: #1E90FF; } 
+.box2 { background-color: #ADD8E6; } 
+.box3 { background-color: #87CEEB; } 
+
+@media (max-width: 430px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box1 {
+    height: 400px; 
+    width: 310px;
+  }
+
+  .box2, .box3 {
+    height: 142px; 
+    width: 310px;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box1 {
+    height: 530px;
+    width: 530px; 
+  }
+
+  .box2 {
+    height: 300px;
+    width: 420px; 
+  }
+
+  .box3 {
+    height: 226px; 
+    width: 420px; 
+    position: absolute; left: 542px; top: 312px;
+
+  }
+}
