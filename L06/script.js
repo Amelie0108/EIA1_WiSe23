@@ -7,27 +7,27 @@ if (playerName) {
         let forest = prompt("Im Wald triffst du auf ein Monster. Kämpfen (k) oder Fliehen (f)?");
 
         if (forest === "k") {
-            console.log("Mutig! Du besiegst das Monster und findest einen Schatz.");
+            alert("Mutig! Du besiegst das Monster und findest einen Schatz.");
         } else if (forest === "f") {
-            console.log("Kluge Entscheidung! Sicherheit geht vor.");
+            alert("Kluge Entscheidung! Sicherheit geht vor.");
         } else {
-            console.log("Das war keine gültige Entscheidung. Das Spiel endet hier.");
+            alert("Das war keine gültige Entscheidung. Das Spiel endet hier.");
         }
 
     } else if (firstdecision === "f") {
         let river = prompt("Am Fluss triffst du einen weisen Mann. Reden (r) oder Weitergehen (w)?");
 
         if (river === "r") {
-            console.log("Der weise Mann gibt dir einen wertvollen Rat für dein Leben.");
+            alert("Der weise Mann gibt dir einen wertvollen Rat für dein Leben.");
         } else if (river === "w") {
-            console.log("Du verpasst die Chance, aber genießt einen schönen Spaziergang.");
+            alert("Du verpasst die Chance, aber genießt einen schönen Spaziergang.");
         } else {
-            console.log("Das war keine gültige Entscheidung. Das Spiel endet hier.");
+            alert("Das war keine gültige Entscheidung. Das Spiel endet hier.");
         }
 
     } else {
-        console.log("Das war keine gültige Entscheidung. Das Spiel endet hier.");
+        alert("Das war keine gültige Entscheidung. Das Spiel endet hier.");
     }
 } else {
-    console.log("Kein Name eingegeben. Das Spiel endet hier.");
+    alert("Kein Name eingegeben. Das Spiel endet hier.");
 }
